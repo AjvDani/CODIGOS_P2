@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMEROS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>PARES E IMPARES</h1>
+        <div class="mb-3">
+            <label for="txt_numero_inicio" class="form-label">Ingrese Numero Inicio:</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="txt_numero_inicio"
+                aria-describedby="helpId"
+                placeholder="20"
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo:10</small>
+        </div>
+        <div class="mb-3">
+            <label for="txt_numero_final" class="form-label">Ingrese Numero Final:</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="txt_numero_final"
+                aria-describedby="helpId"
+                placeholder="20"
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo:20</small>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_mostrar_numeros"
+                class="btn btn-primary"
+            >
+                MOSTRAR NUMEROS
+            </button>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_limpiar"
+                class="btn btn-primary bg-danger"
+            >
+                LIMPIAR
+            </button>
+        </div>
+        
+        <hr>
+        <p>RESULTADO:</p>
+        <div id="txt_mostrar_resultado"></div>
+        <div class="row">
+            <div class="col">PARES
+                <div id="txt_mostrar_pares"></div>
+            </div>
+            <div class="col">IMPARES
+                <div id="txt_mostrar_impares"></div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="./public/js/numeros.js"></script>
+</body>
+</html>

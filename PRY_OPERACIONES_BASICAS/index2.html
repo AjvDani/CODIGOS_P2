@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSION KM</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="display-2 text-center fw-bold">CONVERSION A KM</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>KM A M</h1>
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="txt_numero_uno"
+                            id="txt_numero_uno"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno">INGRESE NUMERO(1): </label>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            
+                            id="btn_convertir_km_m"
+                            class="btn btn-primary"
+                        >
+                            CONVERTIR KM A M
+                        </button>
+                    </div>
+
+                    <h1 id="txt_resultado">0.00</h1>
+                    <h1>m</h1>
+                </div>
+                <div class="col-sm-6">
+                    <h1>M A KM</h1>
+
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="txt_numero_dos"
+                            id="txt_numero_dos"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_dos">INGRESE NUMERO(2):</label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            
+                            id="btn_convertir_m_km"
+                            class="btn btn-primary"
+                        >
+                            CONVERTIR M A KM
+                        </button>
+                    </div>
+                    <h1 id="txt_resultado1">0.00</h1>
+                    <h1>km</h1>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="">
+        c 2025 ESPE
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/convertir_km_m.js"></script>
+    <script src="./public/js/convertir_m_km.js"></script>
+</body>
+</html>

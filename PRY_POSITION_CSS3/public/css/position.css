@@ -1,0 +1,86 @@
+body{
+    background-color: lightpink;
+}
+
+.caja-static{
+    position: static;
+    /* extras */
+    margin: 5px;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: lightblue;
+    /* no afecta las propiedades de mover */
+    left: 50px;
+    top: 50px;
+
+}
+
+.caja-relative{
+    position: relative;
+    /* extras */
+    margin: 5px;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: lightgreen;
+
+    width: 100px;
+    /* afecta las propiedades de mover */
+    left: 50px;
+    top: 10px; 
+    bottom: 50px;
+    right: 20px;
+
+    /* afecta solo las propiedades que lee primero */
+
+}
+
+.padre{
+    position: relative;
+    /* extras */
+    background-color: yellow;
+
+    width: 200px;
+    height: 200px;
+}
+
+.caja-absolute{
+    position:absolute;
+
+    top: 40px;
+    right: 10px;
+    bottom: 40px;
+    background-color: red;
+}
+
+.caja-fixed{
+    position: fixed;
+    background-color: green;
+
+    top: 5px;
+    right: 5px;
+}
+.caja-fixed1{
+
+    font-family: Arial;
+    font-size: 17px;
+    position: fixed;
+    background-color: #004a77;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 50px;
+    cursor: pointer;
+
+    
+    padding: 20px;
+
+
+    bottom: 10px;
+    right: 10px;
+
+    width: 180px;
+    height: 20px;
+}
+
+.caja-fixed1:hover{
+    background-color: #083550;
+}

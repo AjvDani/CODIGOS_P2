@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white text-center">
+
+    <div class="container">
+        <h1>LISTADO DE COMPRAS</h1>
+        <hr>
+
+        <div class="form-floating mb-3">
+            <input
+                type="text"
+                class="form-control"
+                name="formId1"
+                id="txt_producto"
+                placeholder="Ejm: Pera"
+                autofocus
+            />
+            <label for="txt_producto">INGRESE PRODUCTO:</label>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_agregar"
+                class="btn btn-primary"
+            >
+                AGREGAR
+            </button>
+        </div>
+
+        <!-- Some borders are removed -->
+        <ul class="list-group list-group-flush pt-2" id="lista_productos">
+            
+        </ul>
+        <br><br>
+
+        <h1>LISTA MAYUSCULAS</h1>
+        
+        <ul class="list-group list-group-flush pt-2" id="lista_productos_m">
+            
+        </ul>
+        
+        
+
+    </div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--
+    <script src="./public/js/arreglos.js"></script>
+    -->
+    <script src="./public/js/compras.js"></script>
+</body>
+</html>
