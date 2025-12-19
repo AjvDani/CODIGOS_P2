@@ -16,27 +16,57 @@ btn_mostrar.addEventListener('click',function(event){
     let tabla="";
     let tabla2="";
 
-    for (let index = txt_numero_inicio; index <= txt_numero_final; index++) {
+    if(txt_numero_inicio<txt_numero_final){
+        //Impresion tabla resultado
+        let numeros="";
+        for (let index = txt_numero_inicio; index <= txt_numero_final; index++) {
+            //numeros+=index+"<br>";
+            numeros+=`Numero ${index} impreso <br>`;
+            //console.log(index);
+        }
+        txt_mostrar_resultado.innerHTML=numeros;
+
+
+        //Impresion Pares E Impares
+        for (let index = txt_numero_inicio; index <= txt_numero_final; index++) {
         //numeros+=index+"<br>";
         //numeros+=`Numero ${index} impreso <br>`;
-        if(index%2==0){
-            tabla+=`Numero ${index} par <br>`;
-        }else{
-            tabla2+=`Numero ${index} impar <br>`;
+            if(index%2==0){
+                tabla+=`Numero ${index} par <br>`;
+            }else{
+                tabla2+=`Numero ${index} impar <br>`;
+            }
+            //console.log(index);
         }
-        //console.log(index);
+        txt_mostrar_pares.innerHTML=tabla;
+        txt_mostrar_impares.innerHTML=tabla2;
+
+    }else{
+        txt_mostrar_resultado.innerHTML="Numero De Inicio Mayor Que Numero Final";
+
+        txt_mostrar_pares.innerHTML = "";
+        txt_mostrar_impares.innerHTML = "";
     }
-    txt_mostrar_pares.innerHTML=tabla;
-    txt_mostrar_impares.innerHTML=tabla2;
+
+
 
 })
 
 var btn_limpiar=document.getElementById('btn_limpiar');
 btn_limpiar.addEventListener('click',function(){
-    var txt_numero_inicio=parseInt(document.getElementById('txt_numero_inicio').value);
-    var txt_numero_final=parseInt(document.getElementById('txt_numero_final').value);
+    var txt_numero_inicio=document.getElementById('txt_numero_inicio');
+    var txt_numero_final=document.getElementById('txt_numero_final');
 
-    txt_numero_inicio="";
-    txt_numero_final="";
+
+
+    txt_numero_inicio.value="";
+    txt_numero_final.value="";
+
+    // Si se asigna con .innerHTML, se debe vaciar con .innerHTML
+    txt_mostrar_resultado.innerHTML = "";
+    txt_mostrar_pares.innerHTML = "";
+    txt_mostrar_impares.innerHTML = "";
+
     
 })
+

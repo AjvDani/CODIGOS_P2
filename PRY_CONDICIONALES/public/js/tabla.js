@@ -23,6 +23,7 @@ btn_mostrar_tabla.addEventListener('click',function(){
 
 var btn_limpiar=document.getElementById('btn_limpiar');
 btn_limpiar.addEventListener('click',function(){
-    var elemento=document.getElementById('txt_numero_tabla').value;
-    elemento="";
+    
+    var elemento=document.getElementById('txt_numero_tabla');
+    elemento.value="";
 })
